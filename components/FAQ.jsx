@@ -58,7 +58,7 @@ export default function WhyChooseCTA() {
               >
                 <div className="flex flex-col items-center text-center">
                   <Icon className="text-5xl mb-4" style={{ color: brandColor }} />
-                  <h3 className="text-2xl font-bold mb-2">{value.title}</h3>
+                  <h3 className="text-2xl font-bold mb-2 text-black">{value.title}</h3>
                   <p className="text-gray-700">{value.desc}</p>
                 </div>
               </motion.div>

@@ -74,7 +74,7 @@ export default function Navbar() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="mobile-link font-semibold"
+                className="mobile-link font-semibold text-black"
               >
                 {item.label}
               </Link>
