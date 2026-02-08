@@ -63,25 +63,13 @@ export default function Hero() {
           </div>
         ))}
 
-        {/* Badge */}
-        <div
-          className="absolute top-24 left-6 z-30 px-5 py-2 rounded-full border bg-black"
-          style={{ borderColor: primary }}
-        >
-          <span className="font-bold tracking-wide" style={{ color: primary }}>
-            Youth-Owned • B-BBEE Compliant
-          </span>
-        </div>
-
         {/* Hero Content */}
         <div className="relative z-20 max-w-7xl mx-auto h-full flex items-center justify-center px-6 text-center">
           <div className="text-white max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               {slides[current].title}
               <br />
-              <span style={{ color: primary }}>
-                {slides[current].subtitle}
-              </span>
+              <span style={{ color: primary }}>{slides[current].subtitle}</span>
             </h1>
 
             <p className="mt-5 text-lg text-gray-200">
@@ -117,7 +105,6 @@ export default function Hero() {
           style={{ backgroundColor: primary }}
         />
       </section>
- 
     </>
   );
 }
@@ -148,20 +135,13 @@ function Service({ icon, title, desc }) {
         className="relative z-10 transition-transform duration-300 group-hover:-translate-y-2"
         style={{ transform: "translateZ(30px)" }}
       >
-        <div
-          className="text-4xl mx-auto mb-4"
-          style={{ color: "#034380" }}
-        >
+        <div className="text-4xl mx-auto mb-4" style={{ color: "#034380" }}>
           {icon}
         </div>
 
-        <h3 className="text-lg font-bold text-black">
-          {title}
-        </h3>
+        <h3 className="text-lg font-bold text-black">{title}</h3>
 
-        <p className="mt-2 text-sm text-gray-700">
-          {desc}
-        </p>
+        <p className="mt-2 text-sm text-gray-700">{desc}</p>
       </div>
     </div>
   );
